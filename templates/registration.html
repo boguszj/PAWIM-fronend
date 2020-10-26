@@ -1,0 +1,41 @@
+<div class = 'row h-100 justify-content-center align-items-center'>
+    <form class = 'col-sm-9 col-md-6 col-lg-6 border rounded-lg p-5'>
+        <div class = 'form-group'>
+            <input id = 'username' placeholder = 'Nazwa użytkownika' class = 'form-control'>
+            <small class = 'text-danger'></small>
+        </div>
+        <div class = 'form-group'>
+            <input id = 'first_name' placeholder = 'Imię' class = 'form-control'>
+            <small class = 'text-danger'></small>
+        </div>
+        <div class = 'form-group'>
+            <input id = 'last_name' placeholder = 'Nazwisko' class = 'form-control'>
+            <small class = 'text-danger'></small>
+        </div>
+        <div class = 'form-group'>
+            <input id = 'password' type = 'password' placeholder = 'Hasło' class = 'form-control'>
+            <small class = 'text-danger'></small>
+        </div>
+        <div class = 'form-group'>
+            <input id = 'repeat_password' type = 'password' placeholder = 'Powtórz hasło' class = 'form-control'>
+            <small class = 'text-danger'></small>
+        </div>
+        <div class = 'form-group'>
+            <input id = 'photo_input_button' type = 'button' value = 'Załącz zdjęcie' class = 'form-control'>
+            <input id = 'photo_input' type = 'file' accept = 'image/*' class = 'd-none'>
+            <small class = 'text-danger'></small>
+            <small id = 'filename' class = 'text-success'></small>
+        </div>
+        <div class = 'form-group text-center w-100'>
+            <div id = 'gender-switch' class = 'btn-group btn-toggle gender w-100'>
+                <input id = 'gender-switch-male' type = 'button' name = 'gender' class = 'btn btn-light btn-outline-secondary' value = 'Mężczyzna'>
+                <input id = 'gender-switch-female' type = 'button' name = 'gender' class = 'btn btn-light btn-outline-secondary active' value = 'Kobieta'>
+            </div>
+        </div>
+        <div class = 'col text-center'>
+            <div>
+                <button id = 'register' class = 'col-sm-6 col-md-9 col-lg-6 btn btn-outline-secondary' disabled = true>Zarejestruj się</button>
+            </div>
+        </div>
+    </form>
+</div>

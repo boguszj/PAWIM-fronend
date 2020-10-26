@@ -1,0 +1,25 @@
+const MAIN_SELECTOR = 'main#content';
+const NAV_BAR_SELECTOR = '#nav_bar';
+const NAV_LINK_SELECTOR = `nav${ NAV_BAR_SELECTOR } > ul > li > a`;
+
+const NAV_HOME_SELECTOR = '#nav_home';
+const NAV_REGISTRATION_SELECTOR = '#nav_registration';
+
+const HOME_HTML_RELATIVE_PATH = '/home';
+const REGISTRATION_HTML_RELATIVE_PATH = '/registration';
+
+const NAV_ELEMENT_ACTIVE_BOOTSTRAP_CLASS = 'active';
+
+
+export {
+    MAIN_SELECTOR,
+    NAV_BAR_SELECTOR,
+    NAV_LINK_SELECTOR,
+    NAV_HOME_SELECTOR,
+    NAV_REGISTRATION_SELECTOR,
+
+    NAV_ELEMENT_ACTIVE_BOOTSTRAP_CLASS,
+
+    HOME_HTML_RELATIVE_PATH,
+    REGISTRATION_HTML_RELATIVE_PATH,
+};
