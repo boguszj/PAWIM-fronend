@@ -55,11 +55,9 @@ const loadRegistrationServerErrorMessage = () => loadRegistrationResultMessage(R
 const loadRegistrationClientErrorMessage = () => loadRegistrationResultMessage(REGISTRATION_CLIENT_ERROR_HTML_RELATIVE_PATH, REGISTRATION_RETRY_BUTTON_SELECTOR, loadRegistrationPage);
 
 const loadRegistrationResultMessage = (htmlRelativePath, elementForCallback, callback) => {
-    showSpinner();
     const contentElement = $(MAIN_SELECTOR);
     contentElement.load(
         htmlRelativePath,
         () => $(elementForCallback).click(callback),
     );
-    hideSpinner();
 }
