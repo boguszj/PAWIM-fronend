@@ -1,6 +1,7 @@
 const MAIN_SELECTOR = 'main#content';
 const NAV_BAR_SELECTOR = '#nav_bar';
 const NAV_LINK_SELECTOR = `nav${ NAV_BAR_SELECTOR } > ul > li > a`;
+const MODAL_SELECTOR = '#spinner-modal-dialog';
 
 const NAV_HOME_SELECTOR = '#nav_home';
 const NAV_REGISTRATION_SELECTOR = '#nav_registration';
@@ -17,6 +18,7 @@ export {
     NAV_LINK_SELECTOR,
     NAV_HOME_SELECTOR,
     NAV_REGISTRATION_SELECTOR,
+    MODAL_SELECTOR,
 
     NAV_ELEMENT_ACTIVE_BOOTSTRAP_CLASS,
 

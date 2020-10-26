@@ -14,14 +14,17 @@ import {
     REGISTRATION_RETRY_BUTTON_SELECTOR,
 } from "../constants/form-constants.mjs";
 import { loadHomePage, loadRegistrationPage } from "../../index/logic/nav.mjs";
+import { hideSpinner, showSpinner } from "../../index/logic/spinner.mjs";
 
 export const register = (e) => {
+    showSpinner();
     e.preventDefault();
     sendRegistrationRequest()
         .then(response => {
             if (wasSuccessful(response)) loadRegistrationSuccessMessage();
             else if (wasServerError(response)) loadRegistrationServerErrorMessage();
             else loadRegistrationClientErrorMessage();
+            hideSpinner();
         });
 }
 
@@ -52,9 +55,11 @@ const loadRegistrationServerErrorMessage = () => loadRegistrationResultMessage(R
 const loadRegistrationClientErrorMessage = () => loadRegistrationResultMessage(REGISTRATION_CLIENT_ERROR_HTML_RELATIVE_PATH, REGISTRATION_RETRY_BUTTON_SELECTOR, loadRegistrationPage);
 
 const loadRegistrationResultMessage = (htmlRelativePath, elementForCallback, callback) => {
+    showSpinner();
     const contentElement = $(MAIN_SELECTOR);
     contentElement.load(
         htmlRelativePath,
         () => $(elementForCallback).click(callback),
     );
+    hideSpinner();
 }

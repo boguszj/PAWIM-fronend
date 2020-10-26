@@ -6,3 +6,8 @@ footer {
 body {
     height: calc(100vh - 100px);
 }
+
+#spinner {
+    width: 20vh;
+    height: 20vh;
+}
