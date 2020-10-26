@@ -31,7 +31,7 @@ const REGISTRATION_USERNAME_NOT_AVAILABLE_MESSAGE = 'Wybrana nazwa użytkownika 
 const REGISTRATION_INVALID_NAME_OR_LAST_NAME_MESSAGE = 'Wartość pola musi zaczynać się od wielkiej litery i zawierać przynajmniej jedną małą.';
 const REGISTRATION_INVALID_PASSWORD_MESSAGE = 'Hasło musi zawierać przynajmniej jedną dużą literę, jedną cyfrę oraz mieć przynajmniej 8 znaków.';
 const REGISTRATION_INVALID_REPEAT_PASSWORD_MESSAGE = 'Podane hasła nie są takie same.';
-const REGISTRATION_INVALID_USERNAME_MESSAGE = 'Nazwa użytkownika musi mieć przynajmniej 4 znaki i składać się z małych liter.';
+const REGISTRATION_INVALID_USERNAME_MESSAGE = 'Nazwa użytkownika musi mieć przynajmniej 4 znaki i składać się z małych liter bez polskich znaków.';
 const REGISTRATION_INVALID_FILENAME_MESSAGE = 'Dopuszczalne rozszerzenia plików to .jpg i .png';
 
 
